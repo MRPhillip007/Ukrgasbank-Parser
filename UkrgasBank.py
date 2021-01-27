@@ -20,8 +20,8 @@ class UkrgasBang:
     def get_proxy_session(self):
         proxy_session = self.get_session()
         proxy_session.proxies = {
-            'http': 'socks5://127.0.0.1:9050',  # Enter your proxy setting here for HTTP
-            'https': 'socks5://127.0.0.1:9050'  # HTTPS
+            'http': '',  # Enter your proxy setting here for HTTP
+            'https': ''  # HTTPS
         }
         # Check requesting ip address
         print(proxy_session.get('http://ip.42.pl/raw').text)
